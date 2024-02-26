@@ -1,0 +1,160 @@
+body {
+    background-color: hsl(30, 54%, 90%);
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    font-family: "Outfit", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 16px;
+    width: 500px;
+    max-width: 100%;
+    max-height: fit-content;
+    background-color: hsl(0, 0%, 100%);
+    padding: 30px;
+    margin: auto;
+    margin-bottom: 100px;
+    margin-top: 30px;
+    align-items: stretch;
+    text-align: left;
+    flex-flow: column;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+
+@media(max-width:500px){
+    .container{
+        width:350px;
+    }
+}
+.child1, .child2, .child3, .child4 {
+    width: fit-content;
+    object-fit: contain;
+    justify-items: left;
+    color: hsl(24, 5%, 18%);
+    flex-basis: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+figcaption {
+    font-size: 16px;
+}
+
+h1 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+    text-align: left;
+    margin: 10px 0;
+}
+
+ul, ol {
+    list-style-type: none;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+ul {
+    margin-left: 5px;
+}
+
+.child2 {
+    background-color: hsl(330, 100%, 98%);
+    width: -webkit-fill-available;
+    object-fit: contain;
+    justify-items: left;
+    flex-basis: 100%;
+}
+
+.preparation-time-div {
+    padding: 15px;
+}
+
+.child3, .child4 {
+    list-style: none;
+}
+
+h3 {
+    color: hsl(14, 45%, 36%);
+    margin: 10px 0;
+}
+
+h4 {
+    color: hsl(332, 51%, 32%);
+    margin: 0 0 10px 0;
+}
+
+.list1::before {
+    content: "\25AA";
+    color: hsl(332, 51%, 32%);
+    margin-right: 20px;
+}
+
+.list2::before {
+    content: "\25AA";
+    color: hsl(14, 45%, 36%);
+    margin-right: 20px;
+}
+
+ol {
+    list-style: none;
+    counter-reset: li;
+    margin-left: 25px;
+}
+
+.list3::before {
+    counter-increment: li;
+    content: "." counter(li);
+    color: hsl(14, 45%, 36%);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1.5em;
+    margin-right: 0.5em;
+    text-align: right;
+    direction: rtl;
+    font-weight: bold;
+}
+
+hr {
+    border: 0;
+    clear: both;
+    display: block;
+    width: 100%;
+    background-color: #D3D3D3;
+    height: 1px;
+}
+
+.purple {
+    color: hsl(332, 51%, 32%);
+    font-weight: bold;
+
+}
+
+table {
+    display: flex;
+    width: 100%;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.table-row {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
